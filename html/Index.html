@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Acompanhamento Diário</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <meta name="viewimport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logotipo.ico" />
+    <link rel="icon" type="image/x-icon" href="../img/logotipo.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style_agua.css">
+    <script src="jquery-2.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="p-3 mb-2 bg-secondary text-white text-center">
+        <h1>Acompanhamento Diário</h1>
+    </div>
+
+    <div class="container">
+        <fieldset>
+            <legend>
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <h3>Meta calórica</h3>
+                        <hr />
+                    </div>
+                </div>
+
+            </legend>
+
+            <div class="row justify-content-center">
+                <div class="col-6 ">
+                    <input type="text" data-js="number1" placeholder="Digite meta calórica">
+                    <input type="text" data-js="number2" placeholder="Digite caloria consumida">
+                    <input type="text" data-js="number3" placeholder="Digite caloria gasta">
+                    <button type="button">Somar</button>
+                    
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-6 p-3">
+                    <b>Restante:</b>:<samp class="m-2 bg-light border border-secondary p-1" data-js="result">Calorias restantes </samp>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <br>
+                    <hr />
+                    <h3>Consumo de Água</h3>
+                    <hr />
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-5">
+                    <div class="texto-agua"><b>Clique nos copos vazios para enche-los</b>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <img class="editar" id="edit" src="../img/editar.svg">
+                    <img class="excluir" id="edit" src="../img/excluir.svg">
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <img class="copo-agua" id="copo-cheio" src="../img/copo-de-agua-cheio.svg">
+                    <img class="copo-agua" id="copo-vazio" src="../img/copo-de-agua-vazio.svg">
+                    <img class="copo-agua" id="copo-vazio" src="../img/copo-de-agua-vazio.svg">
+                    <img class="copo-agua" id="copo-vazio" src="../img/copo-de-agua-vazio.svg">
+                    <img class="copo-agua" id="copo-vazio" src="../img/copo-de-agua-vazio.svg">
+                    <img class="copo-agua" id="copo-vazio" src="../img/copo-de-agua-vazio.svg">
+                    <img class="copo-agua" id="copo-vazio" src="../img/copo-de-agua-vazio.svg">
+                    <img class="copo-agua" id="copo-vazio" src="../img/copo-de-agua-vazio.svg">
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-6 p-3">
+                    <b>Total ingerido:</b><samp class="m-2 bg-light border border-secondary p-1">250 ml</samp>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <br>
+                    <hr />
+                    <h3>Exercício</h3>
+                    <hr />
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-5">
+                    <div class="texto-agua"><b>Selecione o exercício desejado</b>
+                    </div>
+                </div>
+                <div class="col-1">
+                <img class="editar" id="edit" src="../img/editar.svg">
+                <img class="excluir" id="edit" src="../img/excluir.svg">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-1 p-3">
+                    <input type="checkbox" name="image[]" value="" />
+                    <i class="fa fa-check hidden"></i>
+                    <img type="checkbox" class="esporte" id="luta" alt="Luta" title="Luta" src="../img/luta.svg">
+                </div>
+
+                <div class="col-1 p-3">
+                    <input type="checkbox" name="image[]" value="" />
+                    <i class="fa fa-check hidden"></i>
+                    <img class="esporte" id="natacao" alt="Natacao" title="Natação" src="../img/natacao.svg">
+                </div>
+
+                <div class="col-1 p-3">
+                    <input type="checkbox" name="image[]" value="" />
+                    <i class="fa fa-check hidden"></i>
+                    <img class="esporte" id="musculacao" alt="Musculacao" title="Musculção" src="../img/musculacao.svg">
+                </div>
+
+                <div class="col-1 p-3">
+                    <input type="checkbox" name="image[]" value="" />
+                    <i class="fa fa-check hidden"></i>
+                    <img class="esporte" id="dance" alt="Danca" title="Dança" src="../img/dance.svg">
+                </div>
+
+                <div class="col-1 p-3">
+                    <input type="checkbox" name="image[]" value="" />
+                    <i class="fa fa-check hidden"></i>
+                    <img class="esporte" id="crossfit" alt="Crossfit" title="Crossfit" src="../img/crossfit.svg">
+                </div>
+                
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-6 p-3">
+                    <b>Tempo do Exercício:</b><samp class="m-2 bg-light border border-secondary p-1">40 min</samp>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-5">
+                    <b>Calorias gastas:</b><samp class="m-2 bg-light border border-secondary p-1">300 calorias</samp>
+                </div>
+            </div>
+    
+        </fieldset>
+    </div>
+</body>
+
+<br>
+    <footer class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-2">
+                <img class="home" id="home" src="../img/home.svg">
+            </div>
+            <div class="col-2">
+                <img class="adicionar" id="add" src="../img/adicionar.svg">
+            </div>
+            <div class="col-2">
+                <a href="Progresso.html"><img class="progresso" id="progresso" src="../img/objetivo.svg"></a>
+            </div>
+        </div>
+    </footer>
+
+</html>
+<script>
+    document.querySelector('button')
+        .addEventListener('click', handleClick, false);
+
+    function handleClick() {
+        var number1 = document.querySelector('[data-js="number1"]').value;
+        var number2 = document.querySelector('[data-js="number2"]').value;
+        var number3 = document.querySelector('[data-js="number3"]').value;
+
+        document.querySelector('[data-js="result"]').innerHTML = sum(number1, number2, number3);
+    }
+
+    function sum(number1, number2, number3) {
+        var DECIMAL = 10;
+        return parseInt(number1, DECIMAL) - parseInt(number2, DECIMAL) + parseInt(number3, DECIMAL);
+        
+    }
+</script>

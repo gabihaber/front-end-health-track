@@ -1,0 +1,39 @@
+
+.copo-agua{
+    width: 50px;
+}
+.texto-agua{
+    font-size: 4mm;
+}
+.editar{
+    width: 20px;
+}
+.excluir{
+    width: 20px;
+}
+
+.esporte{
+    width: 50px;
+}
+
+.container-fluid{
+    width: 100%;
+    float: left;
+    padding: 1% 10%;
+    text-align: center;
+    background-color: rgb(196, 196, 196);
+}
+.home{
+    width:80px;
+    text-align: center;
+}
+.adicionar{
+    width:80px;
+    text-align: center;
+    
+}
+.progresso{
+    width:80px;
+    text-align: center;
+    
+}
